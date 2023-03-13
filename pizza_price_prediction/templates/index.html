@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza Price Prediction</title>
+    </head>
+    <body bgcolor="yellow">
+        <center>
+            <h1>Welcome To Pizza Price Prediction!!!</h1>
+        
+            <p>
+                <h2>Customize your Pizza and Predict Pizza Price...</h2>
+            </p>
+            
+            <br>
+            <br>
+            <form action="/" , method="POST">
+                <!-- Restaurant : <input type="text" name="restaurant" placeholder=" Enter_Restaurant (A - T)"/><br><br> -->
+                <h3><label>Cheeze</label> :  <select name="Extra_cheese">
+                                    <option value=""></option>
+                                    <option value=1>YES</option>
+                                    <option value=0>NO</option>
+                                </select> <br><br></h3>
+                <h3><label>Extra Mushroom</label> :  <select name="Extra_mushroom">
+                                    <option value=""></option>
+                                    <option value=1>YES</option>
+                                    <option value=0>NO</option>
+                                </select><br><br></h3>
+
+                <h3><label>Pizza Size In Inch :  </label><input type="text" name="Size_by_Inch" placeholder=" Enter pizza size in inches"/><br><br></h3>
+                <h3><label>Extra Spicy :   <select name="Extra_spicy">
+                                    <option value=""></option>
+                                    <option value=1>YES</option>
+                                    <option value=0>NO</option>
+                                </select><br><br><br></h3>
+                
+                <h2><input type="submit" value="Predict Price"/></h2>
+            </form>                          
+            <hr>
+            <p><h2>Pizza Predicted Prize =  ₹ {{ Predict }}/-</h2></p> 
+        </center> 
+    </body>
+</html>
