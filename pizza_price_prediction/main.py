@@ -19,8 +19,8 @@ def price():
         print(Extra_cheese , Extra_mushroom , Size_by_Inch , Extra_spicy  )
         print(type(Size_by_Inch))
         model = pickle.load(open(CONFIG.MODEL_PATH,"rb"))
-        prediction = model.predict([[Extra_cheese , Extra_mushroom , Size_by_Inch , Extra_spicy  ]]).astype(int)
-        print(prediction.astype(int))
+        prediction = round(model.predict([[Extra_cheese , Extra_mushroom , Size_by_Inch , Extra_spicy  ]])[0],2)
+        print(prediction)
     return render_template("index.html" , Predict = prediction)
 
 
