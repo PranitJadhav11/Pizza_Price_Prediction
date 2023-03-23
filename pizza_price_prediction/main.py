@@ -25,5 +25,5 @@ def price():
 
 
 if __name__ == "__main__":
-    app.run(host=CONFIG.HOST_NUMBER,port=CONFIG.PORT_NUMBER,debug=True)
+    app.run(host=CONFIG.HOST_NUMBER,port=CONFIG.PORT_NUMBER,debug=False)
 
